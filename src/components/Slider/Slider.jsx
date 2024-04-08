@@ -31,16 +31,16 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slide slide1">Slide 1</div>
+          <div className="slide h-[40vh] md:h-[80vh] slide1">Slide 1</div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide slide2">Slide 2</div>
+          <div className="slide h-[40vh] md:h-[80vh] slide2">Slide 2</div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide slide3">Slide 3</div>
+          <div className="slide h-[40vh] md:h-[80vh] slide3">Slide 3</div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide slide4">Slide 4</div>
+          <div className="slide h-[40vh] md:h-[80vh] slide4">Slide 4</div>
         </SwiperSlide>
       </Swiper>
     </>
