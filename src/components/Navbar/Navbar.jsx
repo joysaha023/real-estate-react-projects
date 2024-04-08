@@ -6,16 +6,25 @@ const Navbar = () => {
     const linkNav = (
         <>
            <li>
-              <NavLink to={"/"}>Home</NavLink>
+              <NavLink to={"/"} className={({isActive}) =>
+               isActive ? "bg-white hover:bg-white text-[#0077be] border-0 font-semibold underline" : "font-medium"
+              }
+              >Home</NavLink>
             </li>
             <li>
-              <NavLink to={"/about"}>About Us</NavLink>
+              <NavLink to={"/about"} className={({isActive}) =>
+               isActive ? "bg-white hover:bg-white text-[#0077be] border-0 font-semibold underline" : "font-medium"
+              }>About Us</NavLink>
             </li>
             <li>
-              <NavLink to={"/blog"}>Blog</NavLink>
+              <NavLink to={"/blog"} className={({isActive}) =>
+               isActive ? "bg-white hover:bg-white text-[#0077be] border-0 font-semibold underline" : "font-medium"
+              }>Blog</NavLink>
             </li>
             <li>
-              <NavLink to={"/contact"}>Contact Us</NavLink>
+              <NavLink to={"/contact"} className={({isActive}) =>
+               isActive ? "bg-white hover:bg-white text-[#0077be] border-0 font-semibold underline" : "font-medium"
+              }>Contact Us</NavLink>
             </li>
         </>
     );
@@ -66,8 +75,9 @@ const Navbar = () => {
             >
               <div className="w-10 rounded-full">
                 <img
+                  title="tooltip"
                   alt="Tailwind CSS Navbar component"
-                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                  src="https://i.ibb.co/6JyZF0K/user.png"
                 />
               </div>
             </div>
