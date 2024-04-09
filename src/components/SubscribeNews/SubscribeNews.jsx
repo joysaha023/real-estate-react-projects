@@ -3,7 +3,7 @@ import React from "react";
 const SubscribeNews = () => {
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="mt-8 md:mt-16 ">
+      <div className="mt-8 md:mt-16 px-2">
         <h1 className="text-center font-bold text-3xl uppercase">
           Subscribe to our <span className="text-[#0077be]">Newsletter</span>
         </h1>
@@ -12,9 +12,9 @@ const SubscribeNews = () => {
           latest and special new estate news. Please write your email and and
           get a subscription.
         </p>
-        <label className="input input-bordered flex items-center w-2/5 text-center  gap-2">
-          <input type="text" className="grow " placeholder="Search" />
-          <button className="">Optional</button>
+        <label className="flex flex-col md:flex-row items-center mt-8 w-full md:w-2/5 mx-auto gap-2">
+        <input type="text" placeholder="write email here" className="input input-bordered rounded-none  w-full max-w-xs" />
+          <button className="btn rounded-none text-white hover:text-black bg-[#0077be]">Subscribe</button>
         </label>
       </div>
     </div>
