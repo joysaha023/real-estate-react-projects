@@ -2,14 +2,14 @@ import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 
 const EstateCard = ({ estate }) => {
-  const { estate_title, price, Status, location, Area } = estate;
+  const { estate_title, price, Status, location, Area, image } = estate;
   return (
     <div>
       <div className="card w-full bg-base-100 rounded-none border shadow-none">
         <figure>
           <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
+            src={image}
+            alt={estate_title}
           />
         </figure>
         <div className="card-body">

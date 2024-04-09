@@ -9,7 +9,7 @@
       "Area": "3500 sq ft",
       "location": "Lakefront Estates",
       "facilities": ["Living Room", "Swimming Pool", "Home Theater"],
-      "image": "luxury_lakeside_villa.jpg"
+      "image": "https://i.ibb.co/pb2w4jN/pexels-alex-staudinger-1732414.jpg"
     },
     {
       "estate_title": "Modern City Loft",
@@ -21,7 +21,7 @@
       "Area": "1000 sq ft",
       "location": "Downtown District",
       "facilities": ["Open Kitchen", "Gym", "Roof Deck"],
-      "image": "modern_city_loft.jpg"
+      "image": "https://i.postimg.cc/x1nKD9vL/zxc.jpg"
     },
     {
       "estate_title": "Cozy Townhouse Retreat",
@@ -33,7 +33,7 @@
       "Area": "1800 sq ft",
       "location": "Tranquil Heights",
       "facilities": ["Spacious Patio", "Community Park Access", "Attached Garage"],
-      "image": "cozy_townhouse_retreat.jpg"
+      "image": "https://i.ibb.co/yXkXzBw/slider-3.jpg"
     },
     {
       "estate_title": "Student Housing Complex",
@@ -45,7 +45,7 @@
       "Area": "1200 sq ft",
       "location": "University District",
       "facilities": ["Study Lounge", "Fitness Center", "Laundry Facilities"],
-      "image": "student_housing_complex.jpg"
+      "image": "https://i.ibb.co/rc7cpsF/slider-4.webp"
     },
     {
       "estate_title": "Senior Living Community",
@@ -57,7 +57,7 @@
       "Area": "2000 sq ft",
       "location": "Retirement Haven",
       "facilities": ["Walking Trails", "Clubhouse", "On-site Healthcare"],
-      "image": "senior_living_community.jpg"
+      "image": "https://i.ibb.co/sqC2wHK/slider-2.jpg"
     },
     {
       "estate_title": "Exquisite Vacation Rental",
@@ -69,7 +69,7 @@
       "Area": "2500 sq ft",
       "location": "Coastal Retreat",
       "facilities": ["Private Beach Access", "Infinity Pool", "Outdoor Dining Area"],
-      "image": "exquisite_vacation_rental.jpg"
+      "image": "https://i.ibb.co/RbvP1Z0/sdf.jpg"
     },
     {
         "estate_title": "Family-Friendly Suburban Home",
@@ -81,7 +81,7 @@
         "Area": "2800 sq ft",
         "location": "Suburban Haven",
         "facilities": ["Playroom", "Outdoor BBQ Area", "Attached Garage"],
-        "image": "suburban_family_home.jpg"
+        "image": "https://i.ibb.co/6XMQQ2r/slider-1.jpg"
       },
       {
         "estate_title": "Chic Urban Apartment",
@@ -93,7 +93,7 @@
         "Area": "900 sq ft",
         "location": "City Center",
         "facilities": ["Fitness Center", "Rooftop Lounge", "Pet-Friendly"],
-        "image": "chic_urban_apartment.jpg"
+        "image": "https://i.ibb.co/ZH9Rkxp/opo.jpg"
       },
       {
         "estate_title": "Luxury Penthouse Suite",
@@ -105,7 +105,7 @@
         "Area": "3000 sq ft",
         "location": "Skyline Towers",
         "facilities": ["Private Terrace", "Concierge Service", "Valet Parking"],
-        "image": "luxury_penthouse_suite.jpg"
+        "image": "https://i.ibb.co/gjh24Nt/plpl.jpg"
       }
   ]
   
