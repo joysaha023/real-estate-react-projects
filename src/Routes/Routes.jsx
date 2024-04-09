@@ -8,6 +8,7 @@ import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
 import Agents from "../Pages/Agents/Agents";
 import SpecialEstate from "../Pages/SpecialEstate/SpecialEstate";
+import EstateDetails from "../components/EstateDetails/EstateDetails";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,12 @@ const router = createBrowserRouter([
         },
         {
           path: "/contact",
-          element: <Contact></Contact>
+          element: <Contact></Contact>,
+        },
+        {
+          path: "/EstateDetails/:id",
+          element: <EstateDetails></EstateDetails>,
+          loader: () => fetch("/data.json")
         }
     ]
   },

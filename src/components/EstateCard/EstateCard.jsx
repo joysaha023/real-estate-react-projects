@@ -1,8 +1,9 @@
 import React from "react";
 import { CiLocationOn } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const EstateCard = ({ estate }) => {
-  const { estate_title, price, Status, location, Area, image } = estate;
+  const { estate_title, price, Status, location, Area, image, id } = estate;
   return (
     <div>
       <div className="card w-full bg-base-100 rounded-none border shadow-none">
@@ -21,7 +22,7 @@ const EstateCard = ({ estate }) => {
           <p className="flex items-center gap-1"><CiLocationOn /> {location}</p>
           <p className="flex items-center gap-1">Area: {Area}</p>
           <div className="card-actions justify-end">
-            <button className="btn rounded-none btn-md bg-[#0077be] text-white hover:text-black">View Property</button>
+            <Link to={`/EstateDetails/${id}`} className="btn rounded-none btn-md bg-[#0077be] text-white hover:text-black">View Property</Link>
           </div>
         </div>
       </div>
