@@ -9,6 +9,7 @@ import Contact from "../Pages/Contact/Contact";
 import Agents from "../Pages/Agents/Agents";
 import SpecialEstate from "../Pages/SpecialEstate/SpecialEstate";
 import EstateDetails from "../components/EstateDetails/EstateDetails";
+import LoginPage from "../Pages/LoginPage/LoginPage";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
           path: "/EstateDetails/:id",
           element: <EstateDetails></EstateDetails>,
           loader: () => fetch("/data.json")
+        },
+        {
+          path: "/login",
+          element: <LoginPage></LoginPage>
         }
     ]
   },

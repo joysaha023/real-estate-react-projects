@@ -101,6 +101,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          {/* <Link to={"/login"} className="btn bg-[#0077be] text-white hover:text-black">Login</Link> */}
         </div>
       </div>
     </div>
