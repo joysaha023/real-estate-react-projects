@@ -70,6 +70,42 @@
       "location": "Coastal Retreat",
       "facilities": ["Private Beach Access", "Infinity Pool", "Outdoor Dining Area"],
       "image": "exquisite_vacation_rental.jpg"
-    }
+    },
+    {
+        "estate_title": "Family-Friendly Suburban Home",
+        "id": 7,
+        "segment_name": "Single-family homes",
+        "description": "Spacious and inviting suburban home perfect for families, featuring a large backyard and close proximity to schools.",
+        "price": "$600,000",
+        "Status": "sale",
+        "Area": "2800 sq ft",
+        "location": "Suburban Haven",
+        "facilities": ["Playroom", "Outdoor BBQ Area", "Attached Garage"],
+        "image": "suburban_family_home.jpg"
+      },
+      {
+        "estate_title": "Chic Urban Apartment",
+        "id": 8,
+        "segment_name": "Apartments",
+        "description": "Experience urban living at its best in this chic apartment boasting modern design elements and city skyline views.",
+        "price": "$2,200/month",
+        "Status": "rent",
+        "Area": "900 sq ft",
+        "location": "City Center",
+        "facilities": ["Fitness Center", "Rooftop Lounge", "Pet-Friendly"],
+        "image": "chic_urban_apartment.jpg"
+      },
+      {
+        "estate_title": "Luxury Penthouse Suite",
+        "id": 9,
+        "segment_name": "Apartments",
+        "description": "Indulge in luxury living in this breathtaking penthouse suite offering unparalleled elegance and panoramic city vistas.",
+        "price": "$5,000/month",
+        "Status": "rent",
+        "Area": "3000 sq ft",
+        "location": "Skyline Towers",
+        "facilities": ["Private Terrace", "Concierge Service", "Valet Parking"],
+        "image": "luxury_penthouse_suite.jpg"
+      }
   ]
   
