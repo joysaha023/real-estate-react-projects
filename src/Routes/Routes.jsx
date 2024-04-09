@@ -7,6 +7,7 @@ import Profile from "../Pages/Profile/Profile";
 import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
 import Agents from "../Pages/Agents/Agents";
+import SpecialEstate from "../Pages/SpecialEstate/SpecialEstate";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         {
           path: "/agent",
           element: <Agents></Agents>,
+        },
+        {
+          path: "/specialEstate",
+          element: <SpecialEstate></SpecialEstate>
         },
         {
           path: "/blog",
