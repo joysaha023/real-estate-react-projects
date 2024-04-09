@@ -10,6 +10,7 @@ import Agents from "../Pages/Agents/Agents";
 import SpecialEstate from "../Pages/SpecialEstate/SpecialEstate";
 import EstateDetails from "../components/EstateDetails/EstateDetails";
 import LoginPage from "../Pages/LoginPage/LoginPage";
+import Register from "../Pages/Register/Register";
 
 const router = createBrowserRouter([
   {
@@ -48,7 +49,11 @@ const router = createBrowserRouter([
         },
         {
           path: "/login",
-          element: <LoginPage></LoginPage>
+          element: <LoginPage></LoginPage>,
+        },
+        {
+          path: "/register",
+          element: <Register></Register>,
         }
     ]
   },

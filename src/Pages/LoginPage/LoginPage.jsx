@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaGithub, FaGoogle } from "react-icons/fa6";
 
 const LoginPage = () => {
   return (
@@ -36,7 +37,12 @@ const LoginPage = () => {
         <div className="form-control mt-6">
           <button className="btn bg-[#0077be] text-white hover:text-black rounded-none ">Login</button>
         </div>
-        <h2 className="text-center mt-2">Not a Member Yet? <Link className="text-[#0077be] underline">Register Now</Link></h2>
+        <h2 className="text-center mt-2 font-medium">Not a Member Yet? <Link to={'/register'} className="text-[#0077be] underline">Register Now</Link></h2>
+        <p className="text-center mt-2 font-medium">Or Login with</p>
+        <div className="flex justify-between">
+            <button className="flex items-center gap-1 text-[#0077be] btn btn-sm rounded-none"><FaGoogle />Google</button>
+            <button className="flex items-center gap-1 text-[#0077be] btn btn-sm rounded-none"><FaGithub />Github</button>
+        </div>
       </form>
     </div>
   );
