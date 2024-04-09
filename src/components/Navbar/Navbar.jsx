@@ -12,9 +12,9 @@ const Navbar = () => {
               >Home</NavLink>
             </li>
             <li>
-              <NavLink to={"/about"} className={({isActive}) =>
+              <NavLink to={"/agent"} className={({isActive}) =>
                isActive ? "bg-white hover:bg-white text-[#0077be] border-0 font-semibold underline" : "font-medium"
-              }>About Us</NavLink>
+              }>Agents</NavLink>
             </li>
             <li>
               <NavLink to={"/blog"} className={({isActive}) =>
@@ -53,7 +53,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-none w-52"
             >
               {linkNav}
             </ul>
@@ -83,7 +83,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-none w-52"
             >
               <li>
                 <a className="justify-between">User Name</a>

@@ -3,9 +3,10 @@ import Root from "../Layouts/Root";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Profile from "../Pages/Profile/Profile";
-import About from "../Pages/About/About";
+
 import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
+import Agents from "../Pages/Agents/Agents";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +23,8 @@ const router = createBrowserRouter([
             element: <Profile></Profile>,
         },
         {
-          path: "/about",
-          element: <About></About>,
+          path: "/agent",
+          element: <Agents></Agents>,
         },
         {
           path: "/blog",
