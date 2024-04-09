@@ -19,7 +19,7 @@ const EstateSection = () => {
           harmonious blend of luxury, comfort, and community.
         </p>
       </div>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-16 lg:grid-cols-3 px-2 gap-6">
         {
             estates.map(estate => <EstateCard key={estate.id} estate={estate}></EstateCard>)
         }
