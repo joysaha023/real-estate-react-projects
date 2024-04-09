@@ -9,7 +9,7 @@
       "Area": "500 sq ft",
       "location": "Forest Haven",
       "facilities": ["Outdoor Shower", "Hammock Lounge", "Observation Deck"],
-      "image": "enchanted_treehouse.jpg"
+      "image": "https://i.ibb.co/T1QJT6r/h1.jpg"
     },
     {
       "estate_title": "Floating Houseboat Oasis",
@@ -21,7 +21,7 @@
       "Area": "800 sq ft",
       "location": "Marina Cove",
       "facilities": ["Sun Deck", "Kayaks", "Fishing Equipment"],
-      "image": "floating_houseboat.jpg"
+      "image": "https://i.ibb.co/Vg0633P/h9.jpg"
     },
     {
       "estate_title": "Historic Castle Estate",
@@ -33,7 +33,7 @@
       "Area": "10000 sq ft",
       "location": "Royal Kingdom",
       "facilities": ["Great Hall", "Chapel", "Maze Garden"],
-      "image": "historic_castle.jpg"
+      "image": "https://i.ibb.co/7GvyXjQ/h4.jpg"
     },
     {
       "estate_title": "Futuristic Dome Residence",
@@ -45,7 +45,7 @@
       "Area": "3000 sq ft",
       "location": "Tech Hub",
       "facilities": ["Solar Panels", "Smart Home Technology", "Indoor Garden"],
-      "image": "futuristic_dome_residence.jpg"
+      "image": "https://i.ibb.co/3FS0FgG/h5.jpg"
     },
     {
       "estate_title": "Eco-Friendly Earthship Dwelling",
@@ -57,7 +57,7 @@
       "Area": "2000 sq ft",
       "location": "Green Oasis",
       "facilities": ["Rainwater Harvesting", "Greenhouse", "Composting Toilet"],
-      "image": "eco_friendly_earthship.jpg"
+      "image": "https://i.ibb.co/0CKyYrk/h3.jpg"
     },
     {
       "estate_title": "Underwater Submarine Retreat",
@@ -69,7 +69,7 @@
       "Area": "1000 sq ft",
       "location": "Ocean Depths",
       "facilities": ["Underwater Observatory", "Submarine Tours", "Aquarium Bedroom"],
-      "image": "underwater_submarine.jpg"
+      "image": "https://i.ibb.co/0h5wb3Z/h8.jpg"
     },
     {
       "estate_title": "Historic Lighthouse Residence",
@@ -81,7 +81,7 @@
       "Area": "600 sq ft",
       "location": "Lighthouse Point",
       "facilities": ["Panoramic Observatory", "Coastal Trail Access", "Nautical Decor"],
-      "image": "historic_lighthouse.jpg"
+      "image": "https://i.ibb.co/NTXJrgP/h7.jpg"
     },
     {
       "estate_title": "Hobbit-Inspired Underground Dwelling",
@@ -93,7 +93,7 @@
       "Area": "400 sq ft",
       "location": "Shire Meadows",
       "facilities": ["Round Door Entrance", "Mushroom Garden", "Fireplace Lounge"],
-      "image": "hobbit_inspired_dwelling.jpg"
+      "image": "https://i.ibb.co/pJkxPnd/h6.jpg"
     },
     {
       "estate_title": "Art Deco Airship Penthouse",
@@ -105,7 +105,7 @@
       "Area": "700 sq ft",
       "location": "Skyline Skies",
       "facilities": ["Sky Lounge", "Observation Deck", "Retro Decor"],
-      "image": "art_deco_airship_penthouse.jpg"
+      "image": "https://i.ibb.co/hYGFS0D/h2.jpg"
     }
   ]
   
