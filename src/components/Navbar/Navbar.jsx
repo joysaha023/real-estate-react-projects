@@ -72,7 +72,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <div className="dropdown dropdown-end">
+          {/* <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
@@ -100,8 +100,8 @@ const Navbar = () => {
                 <a>Logout</a>
               </li>
             </ul>
-          </div>
-          {/* <Link to={"/login"} className="btn bg-[#0077be] text-white hover:text-black">Login</Link> */}
+          </div> */}
+          <Link to={"/login"} className="btn bg-[#0077be] rounded-none text-white hover:text-black">Login</Link>
         </div>
       </div>
     </div>
