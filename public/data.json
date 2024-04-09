@@ -1,0 +1,75 @@
+[
+    {
+      "estate_title": "Luxury Lakeside Villa",
+      "id": 1,
+      "segment_name": "Single-family homes",
+      "description": "Experience lakeside living at its finest in this stunning villa boasting panoramic views and luxurious amenities.",
+      "price": "$1,500,000",
+      "Status": "sale",
+      "Area": "3500 sq ft",
+      "location": "Lakefront Estates",
+      "facilities": ["Living Room", "Swimming Pool", "Home Theater"],
+      "image": "luxury_lakeside_villa.jpg"
+    },
+    {
+      "estate_title": "Modern City Loft",
+      "id": 2,
+      "segment_name": "Apartments",
+      "description": "Sleek and stylish loft apartment located in the heart of the city, offering contemporary urban living at its finest.",
+      "price": "$3,000/month",
+      "Status": "rent",
+      "Area": "1000 sq ft",
+      "location": "Downtown District",
+      "facilities": ["Open Kitchen", "Gym", "Roof Deck"],
+      "image": "modern_city_loft.jpg"
+    },
+    {
+      "estate_title": "Cozy Townhouse Retreat",
+      "id": 3,
+      "segment_name": "Townhouses",
+      "description": "Escape the hustle and bustle in this charming townhouse retreat nestled in a quaint neighborhood with scenic views.",
+      "price": "$400,000",
+      "Status": "sale",
+      "Area": "1800 sq ft",
+      "location": "Tranquil Heights",
+      "facilities": ["Spacious Patio", "Community Park Access", "Attached Garage"],
+      "image": "cozy_townhouse_retreat.jpg"
+    },
+    {
+      "estate_title": "Student Housing Complex",
+      "id": 4,
+      "segment_name": "Student housing",
+      "description": "Purpose-built student housing complex offering convenient amenities and a vibrant community atmosphere.",
+      "price": "$800/month",
+      "Status": "rent",
+      "Area": "1200 sq ft",
+      "location": "University District",
+      "facilities": ["Study Lounge", "Fitness Center", "Laundry Facilities"],
+      "image": "student_housing_complex.jpg"
+    },
+    {
+      "estate_title": "Senior Living Community",
+      "id": 5,
+      "segment_name": "Senior living communities",
+      "description": "Enjoy retirement living at its finest in this active senior community offering resort-style amenities and services.",
+      "price": "$250,000",
+      "Status": "sale",
+      "Area": "2000 sq ft",
+      "location": "Retirement Haven",
+      "facilities": ["Walking Trails", "Clubhouse", "On-site Healthcare"],
+      "image": "senior_living_community.jpg"
+    },
+    {
+      "estate_title": "Exquisite Vacation Rental",
+      "id": 6,
+      "segment_name": "Vacation rentals",
+      "description": "Indulge in a luxurious getaway at this exquisite vacation rental featuring breathtaking ocean views and premium amenities.",
+      "price": "$500/night",
+      "Status": "rent",
+      "Area": "2500 sq ft",
+      "location": "Coastal Retreat",
+      "facilities": ["Private Beach Access", "Infinity Pool", "Outdoor Dining Area"],
+      "image": "exquisite_vacation_rental.jpg"
+    }
+  ]
+  
