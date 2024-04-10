@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
+import { AuthContext } from "../../Providers/AuthProviders";
 
 
 const LoginPage = () => {
+  const {SignIn} = useContext(AuthContext)
   const [showPassword, setShowPassword] = useState(false);
 
   const {
@@ -15,7 +17,17 @@ const LoginPage = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    const {email, password} = data;
+
+    //sign in 
+    SignIn(email, password)
+    .then(result => {
+      console.log(result.user)
+    })
+    .catch(error => {
+      console.error(error)
+    })
+
   };
 
   return (
