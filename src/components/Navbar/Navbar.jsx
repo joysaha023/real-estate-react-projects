@@ -21,11 +21,11 @@ const Navbar = () => {
                isActive ? "bg-white hover:bg-white text-[#0077be] border-0 font-semibold underline" : "font-medium"
               }>Special Estate</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to={"/blog"} className={({isActive}) =>
                isActive ? "bg-white hover:bg-white text-[#0077be] border-0 font-semibold underline" : "font-medium"
               }>Blog</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to={"/contact"} className={({isActive}) =>
                isActive ? "bg-white hover:bg-white text-[#0077be] border-0 font-semibold underline" : "font-medium"
