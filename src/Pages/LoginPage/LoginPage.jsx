@@ -6,7 +6,7 @@ import { AuthContext } from "../../Providers/AuthProviders";
 
 
 const LoginPage = () => {
-  const {SignIn} = useContext(AuthContext)
+  const {SignIn, googleSignin} = useContext(AuthContext)
   const [showPassword, setShowPassword] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -32,6 +32,16 @@ const LoginPage = () => {
     })
 
   };
+
+  const handlegoogle = () => {
+    googleSignin()
+    .then(result => {
+      const name = result.user.displayName;
+      const image = result.user.photoURL;
+      console.log(image)
+    })
+    .catch()
+  }
 
   return (
     <div className="flex flex-col items-center">
@@ -77,7 +87,7 @@ const LoginPage = () => {
         <h2 className="text-center mt-2 font-medium">Not a Member Yet? <Link to={'/register'} className="text-[#0077be] underline">Register Now</Link></h2>
         <p className="text-center mt-2 font-medium">Or Login with</p>
         <div className="flex justify-between">
-            <button className="flex items-center gap-1 text-[#0077be] btn btn-sm rounded-none"><FaGoogle />Google</button>
+            <button onClick={handlegoogle} className="flex items-center gap-1 text-[#0077be] btn btn-sm rounded-none"><FaGoogle />Google</button>
             <button className="flex items-center gap-1 text-[#0077be] btn btn-sm rounded-none"><FaGithub />Github</button>
         </div>
       </form>
