@@ -1,7 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useForm } from "react-hook-form"
 
 const Register = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+
+
     return (
         <div className="flex flex-col items-center">
         <form className="card-body lg:w-[30%] border">
