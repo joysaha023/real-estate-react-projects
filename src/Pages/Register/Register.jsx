@@ -84,7 +84,7 @@ const Register = () => {
         </div>
         <h2 className="text-center mt-2 font-medium">
           Already have an account?{" "}
-          <Link to={"/register"} className="text-[#0077be] underline">
+          <Link to={"/login"} className="text-[#0077be] underline">
             Login
           </Link>
         </h2>
