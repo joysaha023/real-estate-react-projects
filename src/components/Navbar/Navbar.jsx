@@ -91,7 +91,7 @@ const Navbar = () => {
                 <img
                   title="tooltip"
                   alt="Tailwind CSS Navbar component"
-                  src="https://i.ibb.co/6JyZF0K/user.png"
+                  src={user?.photoURL || "https://i.ibb.co/6JyZF0K/user.png"}
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-none w-52"
             >
               <li>
-                <a className="justify-between">User Name</a>
+                <a className="justify-between">{user?.displayName || "User" }</a>
               </li>
               <li>
                 <Link to={"/profile"}>Profile</Link>

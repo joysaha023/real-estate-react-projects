@@ -1,55 +1,54 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { AuthContext } from "../../Providers/AuthProviders";
 
-
 const Register = () => {
-  const {createUser} = useContext(AuthContext)
+  const { createUser, updateUserProfile, logOut } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
   const [passwordError, setPasswordError] = useState("");
-  
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
-    
+
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    const {fullName, email, image, password} = data;
+    const { fullName, email, image, password } = data;
 
-    setPasswordError('');
+    setPasswordError("");
 
-    if(password.length == ''){
-      setPasswordError('Password field is required')
+    if (password.length == "") {
+      setPasswordError("Password field is required");
       return;
-    }
-    else if(password.length < 6){
-      setPasswordError('Password should be 6 character or longer ')
+    } else if (password.length < 6) {
+      setPasswordError("Password should be 6 character or longer ");
       return;
-    }
-    else if(!/[A-Z]/.test(password)){
-      setPasswordError('add at least one uppercase later')
-      return
-    }
-    else if(!/[a-z]/.test(password)){
-      setPasswordError('add at least one lowercase later')
-      return
+    } else if (!/[A-Z]/.test(password)) {
+      setPasswordError("add at least one uppercase later");
+      return;
+    } else if (!/[a-z]/.test(password)) {
+      setPasswordError("add at least one lowercase later");
+      return;
     }
 
     //create user
     createUser(email, password)
-    .then(result => {
-      console.log(result.user)
-    })
-    .catch(error => {
-      console.error(error)
-    })
+      .then((result) => {
+        updateUserProfile(fullName, image)
+        .then(() => {
+          console.log(result.user);
+          logOut();
+          navigate('/login')
 
-
-
+        })
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -103,18 +102,26 @@ const Register = () => {
             <span className="label-text">Password</span>
           </label>
           <label className="input input-bordered rounded-none flex items-center gap-2">
-            
-          <input
+            <input
               type={showPassword ? "text" : "password"}
               placeholder="password"
-           
-              {...register("password")} />
-            <span className="relative lg:-right-20  text-gray-600" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaRegEyeSlash></FaRegEyeSlash> : <FaRegEye></FaRegEye>}</span>
+              {...register("password")}
+            />
+            <span
+              className="relative lg:-right-20  text-gray-600"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? (
+                <FaRegEyeSlash></FaRegEyeSlash>
+              ) : (
+                <FaRegEye></FaRegEye>
+              )}
+            </span>
           </label>
-          
-          {
-            passwordError && <p className="text-red-500 text-sm">{passwordError}</p>
-          }
+
+          {passwordError && (
+            <p className="text-red-500 text-sm">{passwordError}</p>
+          )}
         </div>
         <div className="form-control mt-6">
           <button className="btn bg-[#0077be] text-white hover:text-black rounded-none ">
