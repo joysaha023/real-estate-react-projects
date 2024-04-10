@@ -5,15 +5,40 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [passwordError, setPasswordError] = useState("");
   const {
     register,
     handleSubmit,
-    watch,
+    
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    const {fullName, email, image, password} = data;
+
+    setPasswordError('');
+
+    if(password.length == ''){
+      setPasswordError('Password field is required')
+      return;
+    }
+    else if(password.length < 6){
+      setPasswordError('Password should be 6 character or longer ')
+      return;
+    }
+    else if(!/[A-Z]/.test(password)){
+      setPasswordError('add at least one uppercase later')
+      return
+    }
+    else if(!/[a-z]/.test(password)){
+      setPasswordError('add at least one lowercase later')
+      return
+    }
+
+    console.log(data)
+
+
+
   };
 
   return (
@@ -71,11 +96,14 @@ const Register = () => {
           <input
               type={showPassword ? "text" : "password"}
               placeholder="password"
-              className=" "
+           
               {...register("password")} />
             <span className="relative lg:-right-20  text-gray-600" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaRegEyeSlash></FaRegEyeSlash> : <FaRegEye></FaRegEye>}</span>
           </label>
-      
+          
+          {
+            passwordError && <p className="text-red-500 text-sm">{passwordError}</p>
+          }
         </div>
         <div className="form-control mt-6">
           <button className="btn bg-[#0077be] text-white hover:text-black rounded-none ">

@@ -10,7 +10,7 @@ const LoginPage = () => {
   const {
     register,
     handleSubmit,
-    watch,
+   
     formState: { errors },
   } = useForm();
 
@@ -45,11 +45,16 @@ const LoginPage = () => {
           <input
               type={showPassword ? "text" : "password"}
               placeholder="password"
+              
               className=" "
-              {...register("password")} />
+              {...register("password", {required: true}) }/>
             <span className="relative lg:-right-20  text-gray-600" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaRegEyeSlash></FaRegEyeSlash> : <FaRegEye></FaRegEye>}</span>
+            
           </label>
-      
+          {errors.password && (
+            <span className="text-red-500 text-sm">Password is required</span>
+          )}
+          
         </div>
         <div className="form-control mt-6">
           <button className="btn bg-[#0077be] text-white hover:text-black rounded-none ">Login</button>
