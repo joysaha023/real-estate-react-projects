@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { AuthContext } from "../../Providers/AuthProviders";
@@ -8,6 +8,8 @@ import { AuthContext } from "../../Providers/AuthProviders";
 const LoginPage = () => {
   const {SignIn} = useContext(AuthContext)
   const [showPassword, setShowPassword] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -23,6 +25,7 @@ const LoginPage = () => {
     SignIn(email, password)
     .then(result => {
       console.log(result.user)
+      navigate(location?.state ? location.state: '/')
     })
     .catch(error => {
       alert("incorrect password")

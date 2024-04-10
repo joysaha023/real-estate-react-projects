@@ -11,6 +11,7 @@ import SpecialEstate from "../Pages/SpecialEstate/SpecialEstate";
 import EstateDetails from "../components/EstateDetails/EstateDetails";
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import Register from "../Pages/Register/Register";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/specialEstate",
-          element: <SpecialEstate></SpecialEstate>,
+          element: <PrivateRoutes><SpecialEstate></SpecialEstate></PrivateRoutes>,
           loader: () => fetch("/special.json")
         },
         {
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/EstateDetails/:id",
-          element: <EstateDetails></EstateDetails>,
+          element: <PrivateRoutes><EstateDetails></EstateDetails></PrivateRoutes>,
           loader: () => fetch("/data.json")
         },
         {
