@@ -25,7 +25,7 @@ const LoginPage = () => {
       console.log(result.user)
     })
     .catch(error => {
-      console.error(error)
+      alert("incorrect password")
     })
 
   };
