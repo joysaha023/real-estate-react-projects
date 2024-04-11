@@ -11,6 +11,7 @@ import "./slider.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 export default function App() {
   return (
@@ -31,16 +32,28 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slide h-[40vh] md:h-[80vh] slide1">Slide 1</div>
+          <div className="slide h-[40vh] md:h-[80vh] slide1"><div className="overlay-box flex flex-col items-center justify-center">
+            <h2 className="text-xl md:text-5xl mb-4 md:mb-10 font-bold">Family-Friendly Suburban Home</h2>
+            <Link to={`/EstateDetails/${7}`} className="btn rounded-none btn-md border-0 bg-[#0077be] text-white hover:text-black">Explore Now</Link>
+            </div></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide h-[40vh] md:h-[80vh] slide2">Slide 2</div>
+          <div className="slide h-[40vh] md:h-[80vh] slide2"><div className="overlay-box flex flex-col items-center justify-center">
+            <h2 className="text-xl md:text-5xl mb-4 md:mb-10 font-bold">Senior Living Community</h2>
+            <Link to={`/EstateDetails/${5}`} className="btn rounded-none btn-md border-0 bg-[#0077be] text-white hover:text-black">Explore Now</Link>
+            </div></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide h-[40vh] md:h-[80vh] slide3">Slide 3</div>
+          <div className="slide h-[40vh] md:h-[80vh] slide3"><div className="overlay-box flex flex-col items-center justify-center">
+            <h2 className="text-xl md:text-5xl mb-4 md:mb-10 font-bold">Cozy Townhouse Retreat</h2>
+            <Link to={`/EstateDetails/${3}`} className="btn rounded-none btn-md border-0 bg-[#0077be] text-white hover:text-black">Explore Now</Link>
+            </div></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide h-[40vh] md:h-[80vh] slide4">Slide 4</div>
+          <div className="slide h-[40vh] md:h-[80vh] slide4"><div className="overlay-box flex flex-col items-center justify-center">
+            <h2 className="text-xl md:text-5xl mb-4 md:mb-10 font-bold">Student Housing Complex</h2>
+            <Link to={`/EstateDetails/${4}`} className="btn rounded-none btn-md border-0 bg-[#0077be] text-white hover:text-black">Explore Now</Link>
+            </div></div>
         </SwiperSlide>
       </Swiper>
     </>
