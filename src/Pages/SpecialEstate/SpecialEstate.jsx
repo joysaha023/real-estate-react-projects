@@ -11,7 +11,7 @@ const SpecialEstate = () => {
       <Helmet>
         <title>HavenHQ - Special Estate</title>
       </Helmet>
-      <div className="mt-8 md:mt-16 ">
+      <div className="mt-2 md:mt-4 ">
         <h1 className="text-center font-bold text-3xl uppercase">
           Special <span className="text-[#0077be]">Estate</span>
         </h1>
@@ -21,7 +21,7 @@ const SpecialEstate = () => {
           from here explore and choice more estate here.
         </p>
       </div>
-      <div className=" grid grid-cols-1 mt-8 px-2 md:mt-16 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className=" grid grid-cols-1 mt-5 px-2 md:mt-16 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {specialData.map((item) => (
           <SpecialEstateCard key={item.id} item={item}></SpecialEstateCard>
         ))}

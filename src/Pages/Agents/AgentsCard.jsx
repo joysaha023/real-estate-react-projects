@@ -6,7 +6,7 @@ const AgentsCard = ({ item }) => {
     <div className="card md:card-side bg-base-100 border rounded-none">
       <figure className="p-4">
         <img
-          src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+          src={image}
           alt="Movie"
         />
       </figure>
