@@ -36,9 +36,8 @@ const LoginPage = () => {
   const handlegoogle = () => {
     googleSignin()
     .then(result => {
-      const name = result.user.displayName;
-      const image = result.user.photoURL;
-      console.log(image)
+      console.log(result.user)
+      navigate(location?.state ? location.state: '/')
     })
     .catch()
   }

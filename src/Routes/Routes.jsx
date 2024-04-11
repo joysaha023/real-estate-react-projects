@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         },
         {
             path: "/profile",
-            element: <Profile></Profile>,
+            element: <PrivateRoutes><Profile></Profile></PrivateRoutes>,
         },
         {
           path: "/agent",
