@@ -9,7 +9,6 @@ const UpdateProfile = () => {
   const {
     register,
     handleSubmit,
-
     formState: { errors },
   } = useForm();
 
