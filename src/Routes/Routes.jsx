@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         {
           path: "/EstateDetails/:id",
           element: <PrivateRoutes><EstateDetails></EstateDetails></PrivateRoutes>,
-          loader: () => fetch("/data.json")
+          loader: () => fetch("/MixData.json")
         },
         {
           path: "/login",
