@@ -3,7 +3,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 const SpecialEstateCard = ({ item }) => {
-  console.log(item);
+  console.log(item)
   const { estate_title, price, Status, location, Area, image, id } = item;
   return (
     <div>

@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 
 const SpecialEstate = () => {
   const specialData = useLoaderData();
+  
   return (
     <div className="max-w-6xl mx-auto">
       <Helmet>

@@ -35,6 +35,7 @@ const router = createBrowserRouter([
         {
           path: "/agent",
           element: <Agents></Agents>,
+          loader: () => fetch("/agent.json")
         },
         {
           path: "/specialEstate",
