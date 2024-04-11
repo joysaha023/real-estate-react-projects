@@ -23,19 +23,19 @@ const EstateDetails = () => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{estate_title}</h2>
+          <h2 className="card-title text-2xl font-bold">{estate_title}</h2>
           <p>{description}</p>
-          <p>{segment_name}</p>
-          <p className="flex items-center gap-1"><CiLocationOn /> {location}</p>
-          <p className="flex items-center gap-1">Area: {Area}</p>
-          <div className="">
-            <h2>Facilities:</h2>
+          <p><span className="font-semibold text-lg">Segment:</span> {segment_name}</p>
+          <p className="flex items-center gap-1"><span className="font-semibold text-lg">Location:</span> {location}</p>
+          <p className="flex items-center gap-1"><span className="font-semibold text-lg">Area:</span> {Area}</p>
+          <div className="flex flex-col md:flex-row md:gap-4">
+          <h2 className="font-semibold text-lg">Facilities:</h2>
             {
               estate.facilities.map(item => <HashTag key={item.id} item={item}></HashTag>)
             }
           </div>
-          <p>Status: For {Status}</p>
-          <p>Price: {price}</p>
+          <p><span className="font-semibold text-lg">Status:</span> For {Status}</p>
+          <p><span className="font-semibold text-lg">Price:</span> {price}</p>
           <div className="card-actions justify-end">
             <button className="btn bg-[#0077be] text-white hover:text-black rounded-none">Book Now</button>
           </div>
