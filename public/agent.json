@@ -1,50 +1,50 @@
 [
     {
         "name": "John Smith",
-        "email": "john.smith@example.com",
+        "email": "john.smith@gmail.com",
         "phone": "+1 (555) 123-4567",
         "address": "123 Main Street, Cityville, USA",
         "license": "RE123456",
-        "image": "https://example.com/john_smith.jpg"
+        "image": "https://gmail.com/john_smith.jpg"
     },
     {
         "name": "Emily Johnson",
-        "email": "emily.johnson@example.com",
+        "email": "emily.johnson@gmail.com",
         "phone": "+1 (555) 987-6543",
         "address": "456 Elm Street, Townsville, USA",
         "license": "RE987654",
-        "image": "https://example.com/emily_johnson.jpg"
+        "image": "https://gmail.com/emily_johnson.jpg"
     },
     {
         "name": "Michael Brown",
-        "email": "michael.brown@example.com",
+        "email": "michael.brown@gmail.com",
         "phone": "+1 (555) 789-0123",
         "address": "789 Oak Avenue, Villagetown, USA",
         "license": "RE789012",
-        "image": "https://example.com/michael_brown.jpg"
+        "image": "https://gmail.com/michael_brown.jpg"
     },
     {
         "name": "Jessica Davis",
-        "email": "jessica.davis@example.com",
+        "email": "jessica.davis@gmail.com",
         "phone": "+1 (555) 345-6789",
         "address": "321 Maple Lane, Hamletville, USA",
         "license": "RE345678",
-        "image": "https://example.com/jessica_davis.jpg"
+        "image": "https://gmail.com/jessica_davis.jpg"
     },
     {
         "name": "David Wilson",
-        "email": "david.wilson@example.com",
+        "email": "david.wilson@gmail.com",
         "phone": "+1 (555) 234-5678",
         "address": "654 Pine Road, Boroughburg, USA",
         "license": "RE234567",
-        "image": "https://example.com/david_wilson.jpg"
+        "image": "https://gmail.com/david_wilson.jpg"
     },
     {
         "name": "Sarah Martinez",
-        "email": "sarah.martinez@example.com",
+        "email": "sarah.martinez@gmail.com",
         "phone": "+1 (555) 876-5432",
         "address": "987 Cedar Boulevard, Villageville, USA",
         "license": "RE876543",
-        "image": "https://example.com/sarah_martinez.jpg"
+        "image": "https://gmail.com/sarah_martinez.jpg"
     }
 ]
