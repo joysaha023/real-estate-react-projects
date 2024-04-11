@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { AuthContext } from "../../Providers/AuthProviders";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { createUser, updateUserProfile, logOut } = useContext(AuthContext);
@@ -52,6 +53,9 @@ const Register = () => {
 
   return (
     <div className="flex flex-col items-center">
+      <Helmet>
+        <title>HavenHQ - Register</title>
+      </Helmet>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="card-body lg:w-[30%] border"

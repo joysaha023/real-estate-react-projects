@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { useForm } from "react-hook-form";
+import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
   const { user, updateUserProfile } = useContext(AuthContext);
@@ -22,6 +23,9 @@ const UpdateProfile = () => {
 
   return (
     <div className="max-w-6xl mx-auto">
+      <Helmet>
+        <title>HavenHQ - Update Profile</title>
+      </Helmet>
       <div className="">
         <div className="flex flex-col items-center ">
           <img

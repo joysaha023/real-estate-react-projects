@@ -1,12 +1,17 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProviders";
+import { Helmet } from "react-helmet-async";
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
   return (
     <div className="max-w-6xl mx-auto ">
+      <Helmet>
+        <title>HavenHQ - Profile</title>
+      </Helmet>
       <div className="flex flex-col items-center my-16">
-        <img className="rounded-full"
+        <img
+          className="rounded-full"
           src={user?.photoURL || "https://i.ibb.co/6JyZF0K/user.png"}
           alt="pic"
         />

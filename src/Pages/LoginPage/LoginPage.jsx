@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { AuthContext } from "../../Providers/AuthProviders";
+import { Helmet } from "react-helmet-async";
 
 
 const LoginPage = () => {
@@ -44,6 +45,9 @@ const LoginPage = () => {
 
   return (
     <div className="flex flex-col items-center">
+      <Helmet>
+        <title>HavenHQ - Login</title>
+      </Helmet>
       <form onSubmit={handleSubmit(onSubmit)} className="card-body lg:w-[30%] border">
         <h2 className="text-center text-2xl md:text-3xl font-bold">Login</h2>
         <div className="form-control">
