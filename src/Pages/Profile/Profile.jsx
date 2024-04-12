@@ -16,6 +16,7 @@ const Profile = () => {
           alt="pic"
         />
         <h2 className="mt-10 font-medium text-4xl">{user?.displayName}</h2>
+        <p className="text-lg mt-3">{user?.email}</p>
       </div>
     </div>
   );

@@ -34,6 +34,7 @@ const UpdateProfile = () => {
             alt="pic"
           />
           <h2 className="my-5 font-medium text-4xl">{user?.displayName}</h2>
+          <p className="text-lg mb-2">{user?.email}</p>
         </div>
         <div className="flex flex-col items-center">
           <form onSubmit={handleSubmit(onSubmit)} className="card-body lg:w-[30%] border">
