@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 
 const LoginPage = () => {
@@ -25,11 +26,11 @@ const LoginPage = () => {
     //sign in 
     SignIn(email, password)
     .then(result => {
-      console.log(result.user)
+      toast.success("Login Successfully")
       navigate(location?.state ? location.state: '/')
     })
     .catch(error => {
-      alert("incorrect password")
+      toast.warning("incorrect password")
     })
 
   };
@@ -37,7 +38,7 @@ const LoginPage = () => {
   const handlegoogle = () => {
     googleSignin()
     .then(result => {
-      console.log(result.user)
+      toast.success("Login Successfully")
       navigate(location?.state ? location.state: '/')
     })
     .catch()

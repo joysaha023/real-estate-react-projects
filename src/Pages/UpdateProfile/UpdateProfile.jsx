@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { useForm } from "react-hook-form";
 import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 const UpdateProfile = () => {
   const { user, updateUserProfile } = useContext(AuthContext);
@@ -17,6 +18,7 @@ const UpdateProfile = () => {
     const {name, image} = data;
     updateUserProfile(name, image)
         .then(() => {
+            toast.success("Update Changes")
             navigate('/profile')
         })
   };

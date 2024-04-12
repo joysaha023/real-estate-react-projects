@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser, updateUserProfile, logOut } = useContext(AuthContext);
@@ -40,14 +41,13 @@ const Register = () => {
       .then((result) => {
         updateUserProfile(fullName, image)
         .then(() => {
-          console.log(result.user);
+          toast.success("Registration Successfully")
           logOut();
           navigate('/login')
-
         })
       })
       .catch((error) => {
-        console.error(error);
+        toast.error("Email is already exist")
       });
   };
 
