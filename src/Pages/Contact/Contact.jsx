@@ -48,7 +48,7 @@ const Contact = () => {
           <h2 className="text-3xl font-semibold mb-5">
             Frequently Asked Questions
           </h2>
-          <div className="collapse collapse-arrow rounded-none bg-base-200">
+          <div className="collapse collapse-arrow rounded-none bg-gray-50">
             <input type="radio" name="my-accordion-2" defaultChecked />
             <div className="collapse-title text-xl font-medium">
               What types of properties are available on HavenHQ?
@@ -62,7 +62,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-arrow rounded-none bg-base-200">
+          <div className="collapse collapse-arrow rounded-none bg-gray-50">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               Are there any hidden fees when using HavenHQ's services?
@@ -75,7 +75,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-arrow rounded-none bg-base-200">
+          <div className="collapse collapse-arrow rounded-none bg-gray-50">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               Can I get assistance with financing my property purchase through
@@ -89,7 +89,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-arrow rounded-none bg-base-200">
+          <div className="collapse collapse-arrow rounded-none bg-gray-50">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               Can I trust the information provided on HavenHQ listings?
@@ -104,7 +104,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-arrow rounded-none bg-base-200">
+          <div className="collapse collapse-arrow rounded-none bg-gray-50">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               How does HavenHQ protect my personal information and data privacy?
