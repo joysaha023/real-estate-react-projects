@@ -7,7 +7,7 @@ const SpecialEstateCard = ({ item }) => {
   const { estate_title, price, Status, location, Area, image, id } = item;
   return (
     <div>
-      <div data-aos="zoom-in" data-aos-duration="2000" className="card w-full bg-base-100 rounded-none border shadow-none">
+      <div data-aos="zoom-in" data-aos-duration="1500" className="card w-full bg-base-100 rounded-none border shadow-none">
         <figure>
           <img   src={image} alt={estate_title} />
         </figure>
