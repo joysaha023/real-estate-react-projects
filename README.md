@@ -5,4 +5,6 @@ This where you can find your dream houses, apertment, vacetion rental. visit our
 
 Live Site URL: [HavenHQ](https://real-estate-assignment-b4133.web.app/)
 
-
+<a href="https://real-estate-assignment-b4133.web.app/">
+  <img src="" />
+</a>
