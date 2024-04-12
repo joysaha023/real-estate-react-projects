@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 
 
 const LoginPage = () => {
-  const {SignIn, googleSignin} = useContext(AuthContext)
+  const {SignIn, googleSignin, githubSignin} = useContext(AuthContext)
   const [showPassword, setShowPassword] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -37,6 +37,15 @@ const LoginPage = () => {
 
   const handlegoogle = () => {
     googleSignin()
+    .then(result => {
+      toast.success("Login Successfully")
+      navigate(location?.state ? location.state: '/')
+    })
+    .catch()
+  };
+
+  const handleGithub = () => {
+    githubSignin()
     .then(result => {
       toast.success("Login Successfully")
       navigate(location?.state ? location.state: '/')
@@ -92,7 +101,7 @@ const LoginPage = () => {
         <p className="text-center mt-2 font-medium">Or Login with</p>
         <div className="flex justify-between">
             <button onClick={handlegoogle} className="flex items-center gap-1 text-[#0077be] btn btn-sm rounded-none"><FaGoogle />Google</button>
-            <button className="flex items-center gap-1 text-[#0077be] btn btn-sm rounded-none"><FaGithub />Github</button>
+            <button onClick={handleGithub} className="flex items-center gap-1 text-[#0077be] btn btn-sm rounded-none"><FaGithub />Github</button>
         </div>
       </form>
     </div>
