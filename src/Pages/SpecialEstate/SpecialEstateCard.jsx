@@ -9,7 +9,7 @@ const SpecialEstateCard = ({ item }) => {
     <div>
       <div className="card w-full bg-base-100 rounded-none border shadow-none">
         <figure>
-          <img src={image} alt={estate_title} />
+          <img  className="animate__animated hover:animate__zoomIn animate__duration-900 animate__delay-900" src={image} alt={estate_title} />
         </figure>
         <div className="card-body">
           <div className="flex items-center">
