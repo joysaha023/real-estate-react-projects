@@ -1,8 +1,10 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Real-Estate-Projects
 
-Currently, two official plugins are available:
+This where you can find your dream houses, apertment, vacetion rental. visit our website and find your dream houses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Site URL: [HavenHQ](https://real-estate-assignment-b4133.web.app/)
+
+<a href="https://real-estate-assignment-b4133.web.app/">
+  <img src="" />
+</a>
