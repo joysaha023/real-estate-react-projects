@@ -19,35 +19,35 @@ const AboutProperty = () => {
         </p>
       </div>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4">
-        <div className="border text-center p-5">
+        <div data-aos="zoom-in" data-aos-duration="1500" className="border text-center p-5">
           <div className="flex justify-center">
             <IoBedOutline className="text-6xl text-[#0077be]" />
           </div>
           <h2 className="my-2 font-bold text-xl uppercase">Bedrooms</h2>
           <span className=" font-bold text-2xl">3</span>
         </div>
-        <div className="border  text-center p-5">
+        <div data-aos="zoom-in" data-aos-duration="1500" className="border  text-center p-5">
           <div className="flex justify-center">
             <BsBuildingGear className="text-6xl text-[#0077be]" />
           </div>
           <h2 className="my-2 font-bold text-xl uppercase">Square Feet</h2>
           <p className=" font-bold text-2xl">2540</p>
         </div>
-        <div className="border  text-center p-5">
+        <div data-aos="zoom-in" data-aos-duration="1500" className="border  text-center p-5">
           <div className="flex justify-center">
             <FaBath className="text-6xl text-[#0077be]" />
           </div>
           <h2 className="my-2 font-bold text-xl uppercase">Baths</h2>
           <p className=" font-bold text-2xl">2</p>
         </div>
-        <div className="border text-center p-5">
+        <div data-aos="zoom-in" data-aos-duration="1500" className="border text-center p-5">
           <div className="flex justify-center">
             <CiCalendarDate className="text-6xl text-[#0077be]" />
           </div>
           <h2 className="my-2 font-bold text-xl uppercase">Year Build</h2>
           <p className=" font-bold text-2xl">2012</p>
         </div>
-        <div className="border  text-center p-5">
+        <div data-aos="zoom-in" data-aos-duration="1500" className="border  text-center p-5">
           <div className="flex justify-center">
             <FaGlassMartini className="text-6xl text-[#0077be]" />
           </div>

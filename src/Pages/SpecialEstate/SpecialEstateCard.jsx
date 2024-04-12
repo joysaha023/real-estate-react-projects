@@ -7,9 +7,9 @@ const SpecialEstateCard = ({ item }) => {
   const { estate_title, price, Status, location, Area, image, id } = item;
   return (
     <div>
-      <div className="card w-full bg-base-100 rounded-none border shadow-none">
+      <div data-aos="zoom-in" data-aos-duration="2000" className="card w-full bg-base-100 rounded-none border shadow-none">
         <figure>
-          <img  className="animate__animated hover:animate__zoomIn animate__duration-900 animate__delay-900" src={image} alt={estate_title} />
+          <img   src={image} alt={estate_title} />
         </figure>
         <div className="card-body">
           <div className="flex items-center">

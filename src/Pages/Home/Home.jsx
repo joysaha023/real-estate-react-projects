@@ -4,6 +4,10 @@ import AboutProperty from '../../components/AboutProperty/AboutProperty';
 import EstateSection from '../EstateSection/EstateSection';
 import SubscribeNews from '../../components/SubscribeNews/SubscribeNews';
 import { Helmet } from 'react-helmet-async';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Home = () => {
     return (
