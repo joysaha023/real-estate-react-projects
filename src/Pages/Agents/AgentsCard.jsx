@@ -3,7 +3,7 @@ import React from "react";
 const AgentsCard = ({ item }) => {
   const { name, email, phone, address, license, image } = item;
   return (
-    <div className="card md:card-side bg-base-100 border rounded-none">
+    <div data-aos="fade-up" data-aos-duration="2000" className="card md:card-side bg-base-100 border rounded-none">
       <figure className="p-4">
         <img
           src={image}
