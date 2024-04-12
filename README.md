@@ -55,4 +55,6 @@ Live Site URL: [HavenHQ](https://real-estate-assignment-b4133.web.app/)
 - You can know more about these if you click on the view property button.
 
 ## npm packages
-- 
+- [AOS Packages](https://www.npmjs.com/package/aos)
+- [React Hook Form](https://react-hook-form.com/)
+- [Swiper Slider](https://swiperjs.com/)
