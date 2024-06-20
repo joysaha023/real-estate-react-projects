@@ -5,7 +5,7 @@ This where you can find your dream houses, apertment, vacetion rental. visit our
 Live Site URL: [HavenHQ](https://real-estate-assignment-b4133.web.app/)
 
 <a href="https://real-estate-assignment-b4133.web.app/">
-  <img src="https://github.com/programming-hero-web-course-4/b9a9-real-estate-joysaha023/blob/main/demo-img.png" />
+  <img src="https://github.com/joysaha023/real-states-react-projects/blob/main/demo-img.png" />
 </a>
 
 ## Technology Used
