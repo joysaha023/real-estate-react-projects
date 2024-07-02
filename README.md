@@ -22,16 +22,13 @@ Live Site URL: [HavenHQ](https://real-estate-assignment-b4133.web.app/)
 
 ### User Authentication and Permissions
 - Registered User: Registered user access all features.
-- Non Registered User: Non Registered user can't access all features.
 - Registration Field: name, email, photoUrl, password. password is also verification added minimum 6 caracter required.
 - Login Field: user can login with registered email and password and also can signup google and github.
 
 
 ### Home Page (public)
 - Navbar with links for real estate information as like as Home, agents, Contact Us these section are also public.
-- Slider with real estate services name and explore now button. and this slider is use swipper slider react packege and this slider is auto play system.
 - About Property section where user can get a idea about our services.
-- Residential Estate these section is where user can see there verities real estate design and card as a information of real estate.
 - Subscribe NewsLatter section this is where submit email and latest news about real estate.
 - Footer this footer section is rendered all pages with navbar item.
 
@@ -43,4 +40,4 @@ Live Site URL: [HavenHQ](https://real-estate-assignment-b4133.web.app/)
 - copy my repo clone from my repository
 - and run this link on git clone command
 - install node packeage npm install
-- run this project on yout pc npm run dev command
+- run this project 
