@@ -35,26 +35,12 @@ Live Site URL: [HavenHQ](https://real-estate-assignment-b4133.web.app/)
 - Subscribe NewsLatter section this is where submit email and latest news about real estate.
 - Footer this footer section is rendered all pages with navbar item.
 
-### Private Section 
-- Residential Estate section single item card has a view property button this button is also private which only login user can access.
-- Special Estate section is also private where only login user can access these item otherwise it is render to the login page.
-- Show user information this is also private. which show only when user registered and login.
-
-### Profile Section (Private)
-- User can see their profile information after login
-- User can update their profile picture and name from update profile section.
-
 ### Responsive
 - Make the entire website responsive
 
-## Characteristics
-- You can find your dream house from our website.
-- You can contact our agent and get best service or help from our agents.
-- You can login our website and edit your profile 
-- You can visit our special estate and get a unique idea.
-- You can know more about these if you click on the view property button.
-
-## npm packages
-- [AOS Packages](https://www.npmjs.com/package/aos)
-- [React Hook Form](https://react-hook-form.com/)
-- [Swiper Slider](https://swiperjs.com/)
+### If you clone my projects
+- Open cmd and run git clone command
+- copy my repo clone from my repository
+- and run this link on git clone command
+- install node packeage npm install
+- run this project on yout pc npm run dev command
